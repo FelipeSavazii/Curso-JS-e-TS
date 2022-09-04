@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tabela IMC</h1>
+    <p>
+      Seja bem-vindo(a) a calculadora de IMC. Aqui você pode calcular o seu IMC de forma fácil e rápida.
+    </p>
+    <table>
+      <tr>
+        <th>IMC</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td>Menos do que 18,5</td>
+        <td>Abaixo do peso</td>
+      </td>
+      <tr>
+        <td>Entre 18,5 e 24,9</td>
+        <td>Peso normal</td>
+      </td>
+      <tr>
+        <td>Entre 25 e 29,9</td>
+        <td>Sobrepeso</td>
+      </td>
+      <tr>
+        <td>Entre 30 e 34,9</td>
+        <td>Obesidade grau 1</td>
+      </td>
+      <tr>
+        <td>Entre 35 e 39,9</td>
+        <td>Obesidade grau 2</td>
+      </td>
+      <tr>
+        <td>Mais do que 40</td>
+        <td>Obesidade grau 3</td>
+      </td>
+    </table>
+    <h2>Calcule seu IMC</h2>
+    <form class="form">
+      <div class="form-group">
+        <label for="nome">Peso</label>
+        <input type="number" name="peso" id="peso" class="form-control" step="0.010">
+      </div>
+      <div class="form-group">
+        <label for="valor">Altura</label>
+        <input type="number" name="altura" id="altura" class="form-control" step="0.010">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Calcular</button>
+      </div>
+    </form>
+    <span class="result"></span>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
